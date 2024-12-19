@@ -43,7 +43,7 @@ Usage
 
 Clone the repository to your local machine:
 
-git clone https://github.com/yourusername/GoldVision-price-predictor.git
+git clone https://github.com/Barathkalyan/GoldVision-price-predictor.git
 
 Run the script predict_gold_price.py to train the model and generate forecasts.
 
