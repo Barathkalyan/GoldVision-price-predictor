@@ -46,9 +46,12 @@ pip install pandas matplotlib seaborn fbprophet scikit-learn
 
 Here are some screenshots of the GoldVision model's output:
 
-![Gold Price Prediction](https://github.com/Barathkalyan/GoldVision-price-predictor/assets/7d4dc9f1-47ba-428b-9906-df0ebd3f3006)
-![Gold Price Forecast](https://github.com/Barathkalyan/GoldVision-price-predictor/assets/3608717b-5601-44d9-92fe-44716213cce1)
-![Prediction Visualization](https://github.com/Barathkalyan/GoldVision-price-predictor/assets/aeb43263-173d-4b64-b88a-291d0f3c5df8)
+![image](https://github.com/user-attachments/assets/4eabcb87-9dfd-4988-ac3f-9be7000ee23c)
+![image](https://github.com/user-attachments/assets/09f05f05-9b2b-48f1-847e-744252960c89)
+![image](https://github.com/user-attachments/assets/0d21472d-ac1f-4539-b724-9187227fb839)
+
+
+
 
 ## **Future Improvements**
 
