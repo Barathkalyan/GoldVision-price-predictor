@@ -55,6 +55,13 @@ Run the script predict_gold_price.py to train the model and generate forecasts.
 
 Modify the input data (CSV file) or tweak the model parameters to suit your needs.
 
+SCREENSHOTS:
+![image](https://github.com/user-attachments/assets/7d4dc9f1-47ba-428b-9906-df0ebd3f3006)
+![image](https://github.com/user-attachments/assets/3608717b-5601-44d9-92fe-44716213cce1)
+![image](https://github.com/user-attachments/assets/aeb43263-173d-4b64-b88a-291d0f3c5df8)
+
+
+
 Future Improvements
 
 🌐 Web Interface: Develop a user-friendly web-based interface to allow non-technical users to interact with the model.
