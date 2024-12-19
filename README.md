@@ -30,6 +30,8 @@ Scikit-learn: Used for data clustering or any machine learning models.
 Installation
 
 To get started with GoldVision locally, ensure that you have Python installed along with the required libraries. You can install the necessary dependencies using pip:
+
+
 pip install pandas matplotlib seaborn fbprophet scikit-learn
 
 How It Works
@@ -41,6 +43,7 @@ Model Training: The data is then used to train a Facebook Prophet model.
 Prediction: The trained model generates predictions for the next 72 months.
 
 Visualization: Predictions are visualized against actual values, and confidence intervals are displayed for a better understanding of forecast reliability.
+
 
 Usage
 
