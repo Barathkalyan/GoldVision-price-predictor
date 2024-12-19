@@ -5,8 +5,11 @@ GoldVision is a time-series forecasting project designed to predict the future t
 Features
 
 📊 Time Series Forecasting: Utilizes Facebook Prophet for accurate and reliable gold price predictions.
+
 📅 Custom Seasonality: Adds quarterly seasonality to improve prediction accuracy.
+
 📈 Visualizations: Interactive graphs displaying actual vs. predicted values, along with confidence intervals.
+
 🔮 Prediction Horizon: Predicts gold prices up to 72 months into the future.
 
 Technologies Used
