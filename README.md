@@ -46,9 +46,11 @@ pip install pandas matplotlib seaborn fbprophet scikit-learn
 
 Here are some screenshots of the GoldVision model's output:
 
-![image](https://github.com/user-attachments/assets/4eabcb87-9dfd-4988-ac3f-9be7000ee23c)
-![image](https://github.com/user-attachments/assets/09f05f05-9b2b-48f1-847e-744252960c89)
-![image](https://github.com/user-attachments/assets/0d21472d-ac1f-4539-b724-9187227fb839)
+![image](https://github.com/user-attachments/assets/ff97464a-c772-49b8-9fca-f2c8cbc39848)
+![image](https://github.com/user-attachments/assets/3b1920dc-5ada-42db-9d5a-c3907d33482b)
+![image](https://github.com/user-attachments/assets/e7a331e5-1581-4d22-8805-588768a37f1c)
+![image](https://github.com/user-attachments/assets/f2298c0d-a044-4572-9ee9-c4c56f225f31)
+
 
 
 
