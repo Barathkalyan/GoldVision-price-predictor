@@ -4,36 +4,51 @@ import matplotlib.pyplot as plt
 from prophet import Prophet
 from sklearn.metrics import mean_squared_error, mean_absolute_error, r2_score
 
-# Read the csv file using pandas
-df=pd.read_csv("C:\\Users\\kumarasamy\\Desktop\\spark\\Hgold.csv")
-# Convert to Prophet model format
-df["Date"]=pd.to_datetime(df["Date"])
-df=df.rename(columns={"Date":"ds","Open":"y"})
+# Load the dataset
+df = pd.read_csv("C:\\Users\\kumarasamy\\Desktop\\spark\\Hgold.csv")
+df["Date"] = pd.to_datetime(df["Date"])  # Convert the Date column to datetime
+df = df.rename(columns={"Date": "ds", "Open": "y"})  # Rename columns for Prophet
 df.head()
-# Initialize prophet model and train it using the dataset
-model=Prophet(changepoint_prior_scale=0.5)
+
+# Initialize and fit the Prophet model
+model = Prophet(changepoint_prior_scale=0.5)
 model.add_seasonality(name='yearly', period=365.25, fourier_order=7)
 model.add_seasonality(name='quarterly', period=91.25, fourier_order=5)
 model.fit(df)
-# Make predictions
-future=model.make_future_dataframe(periods=365,freq="D")
-forecast=model.predict(future)
+
+# Make future predictions
+future = model.make_future_dataframe(periods=365, freq="D")
+forecast = model.predict(future)
+
+# Forecast plot
+plt.figure()  # Create a new figure
 model.plot(forecast)
-# Do plot graph shows
+plt.title("Forecast Plot")
+plt.xlabel("Date")
+plt.ylabel("Gold Prices")
 plt.show()
-plt.plot(df["ds"],df["y"],label="Actual Values",color="red")
-plt.plot(forecast["ds"],forecast["yhat"],label="predicted values",color="black")
-# Show Confidence levels
+
+# Actual vs Predicted Values
+plt.figure()  # Create a new figure
+plt.plot(df["ds"], df["y"], label="Actual Values", color="red")
+plt.plot(forecast["ds"], forecast["yhat"], label="Predicted Values", color="black")
 plt.fill_between(
     forecast["ds"],
     forecast["yhat_lower"],
     forecast["yhat_upper"],
-    label="Confidence Interval"
+    color="orange", alpha=0.3, label="Confidence Interval"
 )
+plt.title("Actual vs Predicted Values")
+plt.xlabel("Date")
+plt.ylabel("Gold Prices")
 plt.legend()
 plt.show()
+
+# Plot components
+plt.figure()  # Create a new figure
 model.plot_components(forecast)
 plt.show()
+
 # Calculate evaluation metrics
 actual = df["y"].values
 predicted = forecast["yhat"][:len(df)].values
@@ -44,6 +59,7 @@ mare = np.mean(np.abs((actual - predicted) / actual))
 smape = np.mean(2 * np.abs(predicted - actual) / (np.abs(actual) + np.abs(predicted))) * 100
 r2 = r2_score(actual, predicted)
 accuracy = 100 - (mare * 100)
+
 # Display the evaluation metrics
 print("                                            ")
 print("___________________________________________")
