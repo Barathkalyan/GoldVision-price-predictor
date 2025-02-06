@@ -1,6 +1,6 @@
 # **GoldVision: Gold Price Predictor**
 
-**GoldVision** is a time-series forecasting project designed to predict the future trends of gold prices using historical data. The project utilizes **Facebook Prophet** for forecasting and provides visual insights into the price predictions over time. It aims to assist users in making informed decisions related to gold investments.
+**GoldVision** is a time-series forecasting project designed to predict the future trends of gold prices using historical data. The project utilizes **Facebook Prophet** for forecasting and provides visual insights into the price predictions over time. It aims to assist users in making informed decisions related to gold investments. The accuracy depends on the clarity of the dataset used
 
 ## **Features**
 
