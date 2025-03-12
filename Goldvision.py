@@ -5,7 +5,7 @@ from prophet import Prophet
 from sklearn.metrics import mean_squared_error, mean_absolute_error, r2_score
 
 # Load the dataset
-df = pd.read_csv("C:\\Users\\kumarasamy\\Desktop\\spark\\Hgold.csv")
+df = pd.read_csv("C:\\Users\\kumarasamy\\Desktop\\spark\\Hgold.csv") #File address
 df["Date"] = pd.to_datetime(df["Date"])  # Convert the Date column to datetime
 df = df.rename(columns={"Date": "ds", "Open": "y"})  # Rename columns for Prophet
 df.head()
